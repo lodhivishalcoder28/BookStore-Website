@@ -3,7 +3,7 @@
         "id":1,
         "name":"Story book",
         "title":"lorem lasdjf lakfd sldfk",
-        "prince":0,
+        "price":0,
         "category":"Free",
         "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeYZOS6s9mhR43Nm28psii4c_4weUDrstABg&s"
     },
@@ -11,7 +11,7 @@
         "id":2,
         "name":"Story book",
         "title":"lorem lasdjf lakfd sldfk",
-        "prince":0,
+        "price":0,
         "category":"Free",
         "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeYZOS6s9mhR43Nm28psii4c_4weUDrstABg&s"
     },
@@ -19,7 +19,7 @@
         "id":3,
         "name":"Story book",
         "title":"lorem lasdjf lakfd sldfk",
-        "prince":0,
+        "price":0,
         "category":"Free",
         "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeYZOS6s9mhR43Nm28psii4c_4weUDrstABg&s"
     },
@@ -27,7 +27,7 @@
         "id":4,
         "name":"Music book",
         "title":"lorem lasdjf lakfd sldfk",
-        "prince":88,
+        "price":88,
         "category":"Engineering",
         "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeYZOS6s9mhR43Nm28psii4c_4weUDrstABg&s"
     },
@@ -35,7 +35,7 @@
         "id":5,
         "name":"Story book",
         "title":"lorem lasdjf lakfd sldfk",
-        "prince":40,
+        "price":40,
         "category":"Entertainment",
         "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeYZOS6s9mhR43Nm28psii4c_4weUDrstABg&s"
     },
@@ -43,7 +43,7 @@
         "id":6,
         "name":"Story book",
         "title":"lorem lasdjf lakfd sldfk",
-        "prince":30,
+        "price":30,
         "category":"Sports",
         "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeYZOS6s9mhR43Nm28psii4c_4weUDrstABg&s"
     },
@@ -51,7 +51,7 @@
         "id":7,
         "name":"Story book",
         "title":"lorem lasdjf lakfd sldfk",
-        "prince":0,
+        "price":0,
         "category":"Free",
         "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeYZOS6s9mhR43Nm28psii4c_4weUDrstABg&s"
     }

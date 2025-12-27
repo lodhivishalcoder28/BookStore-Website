@@ -1,7 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useEffect } from 'react'
+import Login from './Login';
 
 const Navbar = () => {
+
+  const [theme,setTheme]=useState(("theme")?localStorage.getItem('theme'):"light");
+  
+  const element=document.documentElement;
+  useEffect(()=>{
+    if(theme==="dark"){
+      element.classList.add("dark");
+      localStorage.setItem("theme","dark");
+      document.body.classList.add("dark");
+    }
+    else{
+      element.classList.remove("dark"); 
+      localStorage.setItem("theme","light");
+      document.body.classList.remove("dark");
+    }
+    
+  },[theme])
+
   const navItems = (
     <>
       <li>
@@ -37,9 +56,9 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 z-50  ${
+        className={`max-w-screen-2xl container mx-auto bg-white   dark:bg-slate-900 dark:text-white md:px-20 px-4 fixed top-0 left-0 right-0 z-50   ${
           sticky
-            ? 'sticky-navbar shadow-md bg-base-200 duration-300 transtion-all ease-in-out'
+            ? 'sticky-navbar shadow-md bg-base-200 text-black duration-300 transtion-all ease-in-out  dark:bg-slate-600 dark:text-white'
             : ''
         }`}
       >
@@ -83,8 +102,10 @@ const Navbar = () => {
               <label className='px-3 py-2 border rounded-md  flex items-center gap-2'>
                 <input
                   type='text'
-                  className='grow outline-none'
+                  className='grow outline-none dark:bg-slate-900 dark:text-white'
                   placeholder='Search'
+
+
                 />
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -109,7 +130,7 @@ const Navbar = () => {
               />
 
               {/* sun icon */}
-              <svg
+              <svg onClick={()=>setTheme(theme==="light"?"dark":"light")}
                 className='swap-off h-10 w-7 fill-current'
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 24 24'
@@ -118,7 +139,7 @@ const Navbar = () => {
               </svg>
 
               {/* moon icon */}
-              <svg
+              <svg  onClick={()=>setTheme(theme==="dark"?"light":"dark")}
                 className='swap-on h-10 w-8 fill-current'
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 24 24'
@@ -127,9 +148,10 @@ const Navbar = () => {
               </svg>
             </label>
             <div>
-              <a className='bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 cursor-pointer'>
+              <a className='bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 cursor-pointer ' onClick={()=>document.getElementById("my_modal_3").showModal()}>
                 Login
               </a>
+              <Login/>
             </div>
           </div>
         </div>
